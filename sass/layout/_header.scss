@@ -7,7 +7,21 @@
                 &__logo {
                         width: 40%; 
                         height: auto;
-                        object-fit: contain;
-                        border-radius: none;
          }              
+}
+
+//* Media queries *//
+
+@include respond-to(desktop) { 
+        .header__logo {
+                width: 15%;
+                height: auto;
+        }
+}
+
+@include respond-to(tablet) { 
+        .header__logo {
+                width: 25%;
+                height: auto;
+        }
 }
