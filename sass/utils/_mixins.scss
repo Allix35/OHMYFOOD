@@ -1,0 +1,115 @@
+
+//* Breakpoints *//
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: 767px) { @content; } 
+    } @else if $breakpoint == tablet {
+        @media (min-width: 768px) and (max-width: 1279px) { @content; } 
+    } @else if $breakpoint == desktop {
+        @media (min-width: 1280px) { @content; } 
+    }
+}
+
+//* Header logo & arrow-icon *//
+
+@mixin header-icon-style {
+    .header {
+        position: relative;
+
+        &__icon-arrow {
+            position: absolute;
+            left: 45px; 
+            top: 25px;
+            color: $black; 
+            font-size: 20px; 
+        }
+    }
+}
+
+//* Linear gradient button *//
+
+@mixin linear-gradient($angle, $color1, $percent1, $color2, $percent2) {
+    background: linear-gradient($angle, $color1 $percent1, $color2 $percent2);
+}
+
+//* Article's style from functioning section *//
+
+@mixin homepage-article-style {
+    background-color: $gray-light; 
+    width: 100%; 
+    height: auto;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px #00000026; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    cursor: default;
+}
+
+//* Hover icons & articles from functioning section *//
+
+@mixin homepage-article-hover-shadow($shadow-color: rgba(0, 0, 0, 0.2), $hover-shadow-color: rgba(0, 0, 0, 0.4)) {
+    box-shadow: 0 4px 6px $shadow-color;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 6px 8px $hover-shadow-color;
+    }
+}
+
+//* Badges style from functioning section *//
+@mixin badge-span-style($background-color, $color, $border-radius, $font-weight, $padding) {
+    background-color: $background-color;
+    color: $color;
+    border-radius: $border-radius;
+    font-weight: $font-weight;
+    padding: $padding;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//* Restaurants image *//
+@mixin image-style($width: 100%, $height: 175px, $object-fit: cover) {
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
+}
+
+//* Encart New *//
+@mixin new-span-style($bg-color, $text-color) {
+    display: flex;                       
+    justify-content: center;            
+    align-items: center;                
+    background-color: $bg-color;   
+    color: $text-color;
+    width: 80px;                        
+    height: 30px;                       
+    font-weight: bold;  
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    border-radius: 5px;
+}
+
+//* Articles style Menu's page *//
+@mixin article-style {
+    background-color: none; 
+    width: 100%; // 
+    height: 70px;
+    border-radius: 20px;
+
+    span {
+        font-weight: 700;
+        color: $black; 
+        font-size: 15px;
+    }
+}
