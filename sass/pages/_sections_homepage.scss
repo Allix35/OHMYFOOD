@@ -39,7 +39,7 @@
 
 @include respond-to(tablet) {
 
-    .process, .restaurant, .btn, .card-container {
+    .restaurant, .btn, .card-container {
         padding-left: 40px; 
         padding-right: 40px; 
     }
