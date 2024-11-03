@@ -33,24 +33,24 @@
         transform: scale(0.2);
     }
 
-    30% {
-        opacity: 0.25;
+    20% {
+        opacity: 0.3;
         transform: scale(0.5);
     }
 
+    40% {
+        opacity: 0.5;
+        transform: scale(0.75);
+    }
+
     60% {
-        opacity: 0.75;
-        transform: scale(0.85);
+        opacity: 0.7;
+        transform: scale(0.9);
     }
 
     80% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    90% {
-        opacity: 1;
-        transform: scale(1.1);
+        opacity: 0.9;
+        transform: scale(1.05);
     }
 
     100% {
@@ -58,6 +58,7 @@
         transform: scale(1);
     }
 }
+
 
 //* Opacity menu items *//
 
