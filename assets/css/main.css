@@ -36,6 +36,7 @@
     transform: scale(1);
   }
   90% {
+    opacity: 1;
     transform: scale(1.1);
   }
   100% {
@@ -44,16 +45,6 @@
   }
 }
 @keyframes menu-item {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes check-appear {
   0% {
     opacity: 0;
     transform: translateY(10px);
@@ -261,7 +252,7 @@ p {
   -webkit-text-fill-color: #101010;
 }
 .card .heart-button:hover .card__heart {
-  animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
+  animation: heart-fill 900ms forwards;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -368,9 +359,6 @@ p {
 .btn .btn__functioning .btn__iconebtn {
   color: #7E7E7E;
   transition: color 0.3s ease, background-color 0.3s ease;
-}
-.btn .btn__functioning .btn__iconebtn:hover {
-  color: #9356DC;
 }
 .btn .btn__functioning p {
   font-weight: 500;
@@ -574,9 +562,10 @@ i {
   -webkit-text-fill-color: #101010;
 }
 .card__heart--banniere:hover {
-  animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
+  animation: heart-fill 900ms forwards;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -625,7 +614,7 @@ i {
   margin-bottom: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  animation: menu-item 0.5s forwards;
+  animation: menu-item 1s forwards;
 }
 .menu-item span {
   font-weight: 700;

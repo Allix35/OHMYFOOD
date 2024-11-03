@@ -14,7 +14,7 @@
     font-size: 24px; 
     color: $deeperblack; 
     animation: fadeOut 1.3s forwards;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-text;
 
     .loader-content {
         display: flex;

@@ -49,6 +49,7 @@
     }
 
     90% {
+        opacity: 1;
         transform: scale(1.1);
     }
 
@@ -58,8 +59,7 @@
     }
 }
 
-
-//* Opacity icon check *//
+//* Opacity menu items *//
 
 @keyframes menu-item {
     0% {
@@ -72,18 +72,7 @@
     }
 }
 
-// *Icon check rotation* //
-
-@keyframes check-appear {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+//* Icon check animation *//
 
 @keyframes check-rotate {
     0% {

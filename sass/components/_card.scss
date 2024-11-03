@@ -36,7 +36,7 @@
         }
 
         &:hover .card__heart {
-            animation: heart-fill 900ms forwards cubic-bezier(.65,1.01,.98,1.06);
+            animation: heart-fill 900ms forwards;
             background: linear-gradient($primary-color, $secondary-color); 
             -webkit-background-clip: text; 
             background-clip: text;
