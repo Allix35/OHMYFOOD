@@ -17,18 +17,17 @@
         @include homepage-article-hover-shadow(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
    
         &:hover {
-            background-color: lighten($gray-light, 5%);
+            background-color: lighten($gray-light, 8%);
             color: $black;
             
             .btn__iconebtn {
                 color: $primary-color;
-                background-color: lighten($gray-light, 5%); 
+                background-color: lighten($gray-light, 8%); 
             }
         }
 
         .btn__iconebtn {
-            color: $gray; 
-            transition: color 0.3s ease, background-color 0.3s ease;        
+            color: $gray;          
         }
 
         p {

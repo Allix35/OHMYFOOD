@@ -1,13 +1,13 @@
 
-//* Breakpoints *//
-
 @mixin respond-to($breakpoint) {
     @if $breakpoint == mobile {
         @media (max-width: 767px) { @content; } 
     } @else if $breakpoint == tablet {
-        @media (min-width: 768px) and (max-width: 1279px) { @content; } 
+        @media (min-width: 768px) and (max-width: 1080px) { @content; }
     } @else if $breakpoint == desktop {
-        @media (min-width: 1280px) { @content; } 
+        @media (min-width: 1081px) { @content; }
+    } @else if $breakpoint == large-desktop {
+        @media (min-width: 1440px) { @content; }
     }
 }
 
@@ -53,7 +53,7 @@
     cursor: default;
 }
 
-//* Hover icons & articles from functioning section *//
+//* Hover icons & articles from process section *//
 
 @mixin homepage-article-hover-shadow($shadow-color: rgba(0, 0, 0, 0.2), $hover-shadow-color: rgba(0, 0, 0, 0.4)) {
     box-shadow: 0 4px 6px $shadow-color;
@@ -65,6 +65,7 @@
 }
 
 //* Badges style from functioning section *//
+
 @mixin badge-span-style($background-color, $color, $border-radius, $font-weight, $padding) {
     background-color: $background-color;
     color: $color;
@@ -77,6 +78,7 @@
 }
 
 //* Restaurants image *//
+
 @mixin image-style($width: 100%, $height: 175px, $object-fit: cover) {
     width: $width;
     height: $height;
@@ -84,12 +86,13 @@
 }
 
 //* Encart New *//
-@mixin new-span-style($bg-color, $text-color) {
+
+@mixin new-span-style ($tertiary-color, $text-new-color) {
     display: flex;                       
     justify-content: center;            
     align-items: center;                
-    background-color: $bg-color;   
-    color: $text-color;
+    background-color: $tertiary-color;   
+    color: $text-new-color;
     width: 80px;                        
     height: 30px;                       
     font-weight: bold;  
@@ -100,9 +103,10 @@
 }
 
 //* Articles style Menu's page *//
+
 @mixin article-style {
-    background-color: transparent; 
-    width: 100%; // 
+    background-color: $white; 
+    width: 100%; 
     height: 70px;
     border-radius: 20px;
 

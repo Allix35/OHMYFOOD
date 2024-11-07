@@ -59,5 +59,25 @@
 }
 
 .new {
-    @include new-span-style($tertiary-color, #008766);
+    @include new-span-style($tertiary-color, $text-new-color);
+}
+
+//* Menu cards *//
+
+.card__heart--banniere {
+    background: none; 
+    font-size: 27px; 
+    color: #101010; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: #101010; 
+
+    &:hover {
+        animation: heart-fill 900ms forwards;
+        background: linear-gradient($primary-color, $secondary-color); 
+        -webkit-background-clip: text; 
+        background-clip: text;        
+        -webkit-text-fill-color: transparent; 
+        font-weight: bold; 
+    }    
 }
