@@ -487,6 +487,9 @@ i {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .process {
+    padding-left: 40px;
+  }
   .badge {
     top: 15px;
   }
@@ -521,8 +524,8 @@ i {
 }
 @media (min-width: 1081px) {
   .process {
-    padding-left: 180px;
-    padding-right: 180px;
+    width: 78%;
+    margin: auto;
   }
   .restaurant {
     padding-left: 180px;
@@ -556,7 +559,7 @@ i {
   }
   .card-container .card {
     width: calc(40% - 26px);
-    margin-right: 143px;
+    margin-right: 10%;
     margin-bottom: 50px;
   }
 }
