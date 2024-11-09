@@ -1,5 +1,6 @@
  //* General *//
 
+
 main {
     width: 100%;
     font-family: $font-text;
@@ -8,7 +9,7 @@ main {
 }
 
 body {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     overflow-x: hidden;
 }
@@ -63,6 +64,7 @@ h2 {
     font-size: 22px;
     font-weight: 700;
     text-align: left;
+    padding-right : 100px;
     
 }
 
