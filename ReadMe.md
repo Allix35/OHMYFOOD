@@ -19,4 +19,6 @@ Installation de l'extension Live Sass Compiler
 Les fichiers sources .scss ainsi que le code compilé CSS doivent être disponibles
 dans un ou plusieurs fichiers dédiés.
 Aucun framework ne doit être utilisé (comme Bootstrap par exemple).
+
 Aucun code CSS ne doit être appliqué via un attribut style dans une balise HTML
+
