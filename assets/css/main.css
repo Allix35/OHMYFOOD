@@ -70,6 +70,10 @@
     transform: rotate(0deg);
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
 main {
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -81,6 +85,8 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 a {
@@ -131,6 +137,7 @@ h2 {
   font-size: 22px;
   font-weight: 700;
   text-align: left;
+  padding-right: 100px;
 }
 
 h3 {
